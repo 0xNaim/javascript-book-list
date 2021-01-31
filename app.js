@@ -18,6 +18,8 @@ addBook.addEventListener("click", (e) => {
   } else if (year.value <= 0) {
     alert("Please enter a valid year");
   } else {
+    const tableShow = document.getElementById("table")
+    tableShow.style.visibility = 'visible'
     const newRow = document.createElement("tr");
     bookList.appendChild(newRow);
 

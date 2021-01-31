@@ -15,6 +15,8 @@ addBook.addEventListener("click", (e) => {
     alert("Please enter author name");
   } else if (year.value == "") {
     alert("Please enter year");
+  } else if (year.value <= 0) {
+    alert("Please enter a valid year");
   } else {
     const newRow = document.createElement("tr");
     bookList.appendChild(newRow);
